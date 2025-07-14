@@ -27,6 +27,8 @@ import {
 } from './userSlice';
 
 export const authUser = (fields, role, mode) => async (dispatch) => {
+    console.log('Base URL:', process.env.REACT_APP_BASE_URL);
+
     dispatch(authRequest());
 
     try {
