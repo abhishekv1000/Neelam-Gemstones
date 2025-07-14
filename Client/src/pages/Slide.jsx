@@ -2,8 +2,11 @@ import React from 'react';
 import { Box, Typography, styled, IconButton } from '@mui/material';
 import { ArrowBackIos, ArrowForwardIos } from '@mui/icons-material';
 
-const Slide = ({ items = [] }) => {
-  // Ensure items is always an array
+const Slide = ({ items }) => {
+  // Log incoming items to debug data shape
+  console.log('Slide items:', items);
+
+  // Make sure items is always an array to prevent .map errors
   const data = Array.isArray(items) ? items : [];
 
   const [currentIndex, setCurrentIndex] = React.useState(0);
@@ -17,7 +20,11 @@ const Slide = ({ items = [] }) => {
   };
 
   if (data.length === 0) {
-    return <Typography sx={{ textAlign: 'center', marginTop: 4 }}>No items to display</Typography>;
+    return (
+      <Typography sx={{ textAlign: 'center', marginTop: 4 }}>
+        No items to display
+      </Typography>
+    );
   }
 
   const currentItem = data[currentIndex];
