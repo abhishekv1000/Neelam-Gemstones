@@ -12,7 +12,7 @@ dotenv.config();
 
 app.use(express.json())
 const allowedOrigins = [
-    "https://neelamjewellers.vercel.app/",
+    "https://neelamjewellers.vercel.app",
     "http://localhost:3000"
     
     
