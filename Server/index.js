@@ -12,8 +12,10 @@ dotenv.config();
 
 app.use(express.json())
 const allowedOrigins = [
+    "https://gemstone-seven.vercel.app/",
     "http://localhost:3000",
     "https://neelam-gemstones.vercel.app"
+    
 ];
 
 app.use(cors({
