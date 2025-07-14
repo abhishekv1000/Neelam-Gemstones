@@ -1,0 +1,7 @@
+# MONGO_URL = mongodb+srv://rishiv1000:1221@cluster0.wx5el.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+
+
+# MONGO_URL= mongodb://localhost:27017/gemstone
+
+MONGO_URL= mongodb+srv://Abhi:Abhi@cluster0.qyxy6vg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+SECRET_KEY = 'secret-key'
